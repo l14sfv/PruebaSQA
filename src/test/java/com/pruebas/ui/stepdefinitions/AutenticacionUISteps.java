@@ -18,6 +18,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.questions.WebElementQuestion;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
@@ -78,6 +79,10 @@ public class AutenticacionUISteps {
 
     @Entonces("debería ver un mensaje de error de credenciales inválidas")
     public void deberia_ver_mensaje_de_error_credenciales_invalidas() {
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                WaitUntil.the(LoginPage.MESSAGE_ERROR, isVisible()).forNoMoreThan(10).seconds()
+        );
+
         OnStage.theActorInTheSpotlight().should(
                 seeThat("el mensaje de error de login",
                         Text.of(LoginPage.MESSAGE_ERROR),

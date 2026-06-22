@@ -3,9 +3,15 @@ com\pruebas\Main.class
 com\pruebas\runners\AutenticacionUIRunner.class
 com\pruebas\ui\userinterfaces\RegisterPage.class
 com\pruebas\ui\tasks\Logout.class
+com\pruebas\api\tasks\GetUserProfileApi.class
+com\pruebas\api\tasks\LoginUserApi.class
+com\pruebas\api\stepdefinitions\AutenticacionApiSteps.class
 com\pruebas\ui\tasks\CreateNewContact.class
+com\pruebas\runners\api\AutenticacionApiRunner.class
 com\pruebas\ui\tasks\OpenTheApplication.class
+com\pruebas\api\utils\ApiConfig.class
 com\pruebas\ui\stepdefinitions\AutenticacionUISteps.class
+com\pruebas\api\tasks\CreateUserApi.class
 com\pruebas\ui\userinterfaces\ContactListPage.class
 com\pruebas\ui\tasks\LoginWithCredentials.class
 com\pruebas\ui\userinterfaces\LoginPage.class

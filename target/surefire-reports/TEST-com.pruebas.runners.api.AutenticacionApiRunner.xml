@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.pruebas.runners.api.AutenticacionApiRunner" time="7.688" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Lenovo\Documents\DEV_SENIOR\PruebaSQA\prueba\target\test-classes;C:\Users\Lenovo\Documents\DEV_SENIOR\PruebaSQA\prueba\target\classes;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-core\4.2.34\serenity-core-4.2.34.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-model\4.2.34\serenity-model-4.2.34.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-text\1.12.0\commons-text-1.12.0.jar;C:\Users\Lenovo\.m2\repository\commons-net\commons-net\3.11.1\commons-net-3.11.1.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\guava\33.3.1-jre\guava-33.3.1-jre.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Lenovo\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Lenovo\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\Lenovo\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Lenovo\.m2\repository\org\jsoup\jsoup\1.15.4\jsoup-1.15.4.jar;C:\Users\Lenovo\.m2\repository\com\thoughtworks\xstream\xstream\1.4.21\xstream-1.4.21.jar;C:\Users\Lenovo\.m2\repository\io\github\x-stream\mxparser\1.2.2\mxparser-1.2.2.jar;C:\Users\Lenovo\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\Lenovo\.m2\repository\com\opencsv\opencsv\5.11.1\opencsv-5.11.1.jar;C:\Users\Lenovo\.m2\repository\commons-beanutils\commons-beanutils\1.11.0\commons-beanutils-1.11.0.jar;C:\Users\Lenovo\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\vintage\junit-vintage-engine\5.11.4\junit-vintage-engine-5.11.4.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-engine\1.11.4\junit-platform-engine-1.11.4.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-commons\1.11.4\junit-platform-commons-1.11.4.jar;C:\Users\Lenovo\.m2\repository\com\typesafe\config\1.4.3\config-1.4.3.jar;C:\Users\Lenovo\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\Lenovo\.m2\repository\org\awaitility\awaitility\4.3.0\awaitility-4.3.0.jar;C:\Users\Lenovo\.m2\repository\org\freemarker\freemarker\2.3.34\freemarker-2.3.34.jar;C:\Users\Lenovo\.m2\repository\io\github\classgraph\classgraph\4.8.157\classgraph-4.8.157.jar;C:\Users\Lenovo\.m2\repository\com\github\ben-manes\caffeine\caffeine\2.9.2\caffeine-2.9.2.jar;C:\Users\Lenovo\.m2\repository\org\ehcache\ehcache\3.10.8\ehcache-3.10.8.jar;C:\Users\Lenovo\.m2\repository\javax\cache\cache-api\1.1.0\cache-api-1.1.0.jar;C:\Users\Lenovo\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\Lenovo\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\Lenovo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar;C:\Users\Lenovo\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-all\0.64.8\flexmark-all-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark\0.64.8\flexmark-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.64.8\flexmark-ext-abbreviation-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.64.8\flexmark-ext-admonition-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.64.8\flexmark-ext-anchorlink-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.64.8\flexmark-ext-aside-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.64.8\flexmark-ext-attributes-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.64.8\flexmark-ext-autolink-0.64.8.jar;C:\Users\Lenovo\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.64.8\flexmark-ext-definition-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.64.8\flexmark-ext-emoji-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.64.8\flexmark-ext-enumerated-reference-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.64.8\flexmark-ext-escaped-character-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.64.8\flexmark-ext-footnotes-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.64.8\flexmark-ext-gfm-issues-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.64.8\flexmark-ext-gfm-strikethrough-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.64.8\flexmark-ext-gfm-tasklist-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.64.8\flexmark-ext-gfm-users-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.64.8\flexmark-ext-gitlab-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.64.8\flexmark-ext-jekyll-front-matter-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.64.8\flexmark-ext-jekyll-tag-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.64.8\flexmark-ext-media-tags-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-macros\0.64.8\flexmark-ext-macros-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.64.8\flexmark-ext-ins-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.64.8\flexmark-ext-xwiki-macros-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.64.8\flexmark-ext-superscript-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.64.8\flexmark-ext-toc-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.64.8\flexmark-ext-typographic-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.64.8\flexmark-ext-wikilink-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.64.8\flexmark-ext-yaml-front-matter-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.64.8\flexmark-ext-youtube-embedded-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-html2md-converter\0.64.8\flexmark-html2md-converter-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.64.8\flexmark-jira-converter-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.64.8\flexmark-pdf-converter-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\1.0.10\openhtmltopdf-core-1.0.10.jar;C:\Users\Lenovo\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\1.0.10\openhtmltopdf-pdfbox-1.0.10.jar;C:\Users\Lenovo\.m2\repository\org\apache\pdfbox\xmpbox\2.0.24\xmpbox-2.0.24.jar;C:\Users\Lenovo\.m2\repository\de\rototor\pdfbox\graphics2d\0.32\graphics2d-0.32.jar;C:\Users\Lenovo\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\1.0.10\openhtmltopdf-rtl-support-1.0.10.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.64.8\flexmark-profile-pegdown-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-ast\0.64.8\flexmark-util-ast-0.64.8.jar;C:\Users\Lenovo\.m2\repository\org\jetbrains\annotations\24.0.1\annotations-24.0.1.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-builder\0.64.8\flexmark-util-builder-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-collection\0.64.8\flexmark-util-collection-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-data\0.64.8\flexmark-util-data-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-dependency\0.64.8\flexmark-util-dependency-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-format\0.64.8\flexmark-util-format-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-html\0.64.8\flexmark-util-html-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-misc\0.64.8\flexmark-util-misc-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-options\0.64.8\flexmark-util-options-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-sequence\0.64.8\flexmark-util-sequence-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-visitor\0.64.8\flexmark-util-visitor-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.64.8\flexmark-youtrack-converter-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-resizable-image\0.64.8\flexmark-ext-resizable-image-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.64.8\flexmark-ext-tables-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util\0.64.8\flexmark-util-0.64.8.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-reports\4.2.34\serenity-reports-4.2.34.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-stats\4.2.34\serenity-stats-4.2.34.jar;C:\Users\Lenovo\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\2.1.21\kotlin-stdlib-2.1.21.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-reports-configuration\4.2.34\serenity-reports-configuration-4.2.34.jar;C:\Users\Lenovo\.m2\repository\com\ibm\icu\icu4j\72.1\icu4j-72.1.jar;C:\Users\Lenovo\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-report-resources\4.2.34\serenity-report-resources-4.2.34.jar;C:\Users\Lenovo\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\Lenovo\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.1\jackson-core-2.18.1.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.1\jackson-databind-2.18.1.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.1\jackson-annotations-2.18.1.jar;C:\Users\Lenovo\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;C:\Users\Lenovo\.m2\repository\commons-io\commons-io\2.17.0\commons-io-2.17.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Lenovo\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-java\4.33.0\selenium-java-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v135\4.33.0\selenium-devtools-v135-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v136\4.33.0\selenium-devtools-v136-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.33.0\selenium-devtools-v137-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.33.0\selenium-remote-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-api\1.50.0\opentelemetry-api-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-context\1.50.0\opentelemetry-context-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.50.0\opentelemetry-exporter-logging-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.50.0\opentelemetry-sdk-common-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.50.0\opentelemetry-sdk-extension-autoconfigure-spi-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.50.0\opentelemetry-sdk-extension-autoconfigure-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.50.0\opentelemetry-sdk-trace-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.50.0\opentelemetry-sdk-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.50.0\opentelemetry-sdk-metrics-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.50.0\opentelemetry-sdk-logs-1.50.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-os\4.33.0\selenium-os-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.33.0\selenium-safari-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-api\4.33.0\selenium-api-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-support\4.33.0\selenium-support-4.33.0.jar;C:\Users\Lenovo\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-json\4.33.0\selenium-json-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.33.0\selenium-chrome-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.33.0\selenium-chromium-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.33.0\selenium-manager-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.33.0\selenium-firefox-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-http\4.33.0\selenium-http-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.33.0\selenium-edge-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.33.0\selenium-ie-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\htmlunit\4.7.0\htmlunit-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpmime\4.5.14\httpmime-4.5.14.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\htmlunit-core-js\4.7.0\htmlunit-core-js-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\neko-htmlunit\4.7.0\neko-htmlunit-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\htmlunit-cssparser\4.7.0\htmlunit-cssparser-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\htmlunit-xpath\4.7.0\htmlunit-xpath-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\htmlunit-csp\4.7.0\htmlunit-csp-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\htmlunit-websocket-client\4.7.0\htmlunit-websocket-client-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\htmlunit3-driver\4.32.0\htmlunit3-driver-4.32.0.jar;C:\Users\Lenovo\.m2\repository\io\appium\java-client\9.4.0\java-client-9.4.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\groovy\groovy\4.0.23\groovy-4.0.23.jar;C:\Users\Lenovo\.m2\repository\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\Lenovo\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\Lenovo\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\Lenovo\.m2\repository\com\paulhammant\ngwebdriver\1.2\ngwebdriver-1.2.jar;C:\Users\Lenovo\.m2\repository\joda-time\joda-time\2.13.0\joda-time-2.13.0.jar;C:\Users\Lenovo\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Lenovo\.m2\repository\com\google\jimfs\jimfs\1.3.0\jimfs-1.3.0.jar;C:\Users\Lenovo\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\Lenovo\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Lenovo\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Lenovo\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\Lenovo\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Lenovo\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Lenovo\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\Lenovo\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-junit\4.2.34\serenity-junit-4.2.34.jar;C:\Users\Lenovo\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\Lenovo\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-cucumber\4.2.34\serenity-cucumber-4.2.34.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-core\7.22.2\cucumber-core-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-gherkin\7.22.2\cucumber-gherkin-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.22.2\cucumber-gherkin-messages-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\gherkin\32.1.1\gherkin-32.1.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\query\13.6.0\query-13.6.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\datatable\7.22.2\datatable-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-plugin\7.22.2\cucumber-plugin-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\docstring\7.22.2\docstring-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\html-formatter\21.10.1\html-formatter-21.10.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-java\7.22.2\cucumber-java-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-junit\7.22.2\cucumber-junit-7.22.2.jar;C:\Users\Lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-csv\1.12.0\commons-csv-1.12.0.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-screenplay\4.2.34\serenity-screenplay-4.2.34.jar;C:\Users\Lenovo\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\4.2.34\serenity-screenplay-webdriver-4.2.34.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-rest-assured\4.2.34\serenity-rest-assured-4.2.34.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\rest-assured\5.5.5\rest-assured-5.5.5.jar;C:\Users\Lenovo\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\json-path\5.5.5\json-path-5.5.5.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\rest-assured-common\5.5.5\rest-assured-common-5.5.5.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\xml-path\5.5.5\xml-path-5.5.5.jar;C:\Users\Lenovo\.m2\repository\org\apache\groovy\groovy-json\4.0.23\groovy-json-4.0.23.jar;C:\Users\Lenovo\.m2\repository\org\apache\groovy\groovy-xml\4.0.23\groovy-xml-4.0.23.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-screenplay-rest\4.2.34\serenity-screenplay-rest-4.2.34.jar;C:\Users\Lenovo\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\Lenovo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
+    <property name="sun.java.command" value="C:\Users\Lenovo\AppData\Local\Temp\surefire2389762183099679158\surefirebooter-20260622112502092_3.jar C:\Users\Lenovo\AppData\Local\Temp\surefire2389762183099679158 2026-06-22T11-25-01_946-jvmRun1 surefire-20260622112502092_1tmp surefire_0-20260622112502092_2tmp"/>
+    <property name="webdriver.driver" value="chrome"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Lenovo\Documents\DEV_SENIOR\PruebaSQA\prueba\target\test-classes;C:\Users\Lenovo\Documents\DEV_SENIOR\PruebaSQA\prueba\target\classes;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-core\4.2.34\serenity-core-4.2.34.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-model\4.2.34\serenity-model-4.2.34.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-text\1.12.0\commons-text-1.12.0.jar;C:\Users\Lenovo\.m2\repository\commons-net\commons-net\3.11.1\commons-net-3.11.1.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\guava\33.3.1-jre\guava-33.3.1-jre.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Lenovo\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Lenovo\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\Lenovo\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Lenovo\.m2\repository\org\jsoup\jsoup\1.15.4\jsoup-1.15.4.jar;C:\Users\Lenovo\.m2\repository\com\thoughtworks\xstream\xstream\1.4.21\xstream-1.4.21.jar;C:\Users\Lenovo\.m2\repository\io\github\x-stream\mxparser\1.2.2\mxparser-1.2.2.jar;C:\Users\Lenovo\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\Lenovo\.m2\repository\com\opencsv\opencsv\5.11.1\opencsv-5.11.1.jar;C:\Users\Lenovo\.m2\repository\commons-beanutils\commons-beanutils\1.11.0\commons-beanutils-1.11.0.jar;C:\Users\Lenovo\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\vintage\junit-vintage-engine\5.11.4\junit-vintage-engine-5.11.4.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-engine\1.11.4\junit-platform-engine-1.11.4.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-commons\1.11.4\junit-platform-commons-1.11.4.jar;C:\Users\Lenovo\.m2\repository\com\typesafe\config\1.4.3\config-1.4.3.jar;C:\Users\Lenovo\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\Lenovo\.m2\repository\org\awaitility\awaitility\4.3.0\awaitility-4.3.0.jar;C:\Users\Lenovo\.m2\repository\org\freemarker\freemarker\2.3.34\freemarker-2.3.34.jar;C:\Users\Lenovo\.m2\repository\io\github\classgraph\classgraph\4.8.157\classgraph-4.8.157.jar;C:\Users\Lenovo\.m2\repository\com\github\ben-manes\caffeine\caffeine\2.9.2\caffeine-2.9.2.jar;C:\Users\Lenovo\.m2\repository\org\ehcache\ehcache\3.10.8\ehcache-3.10.8.jar;C:\Users\Lenovo\.m2\repository\javax\cache\cache-api\1.1.0\cache-api-1.1.0.jar;C:\Users\Lenovo\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\Lenovo\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\Lenovo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar;C:\Users\Lenovo\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-all\0.64.8\flexmark-all-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark\0.64.8\flexmark-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.64.8\flexmark-ext-abbreviation-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.64.8\flexmark-ext-admonition-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.64.8\flexmark-ext-anchorlink-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.64.8\flexmark-ext-aside-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.64.8\flexmark-ext-attributes-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.64.8\flexmark-ext-autolink-0.64.8.jar;C:\Users\Lenovo\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.64.8\flexmark-ext-definition-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.64.8\flexmark-ext-emoji-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.64.8\flexmark-ext-enumerated-reference-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.64.8\flexmark-ext-escaped-character-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.64.8\flexmark-ext-footnotes-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.64.8\flexmark-ext-gfm-issues-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.64.8\flexmark-ext-gfm-strikethrough-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.64.8\flexmark-ext-gfm-tasklist-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.64.8\flexmark-ext-gfm-users-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.64.8\flexmark-ext-gitlab-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.64.8\flexmark-ext-jekyll-front-matter-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.64.8\flexmark-ext-jekyll-tag-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.64.8\flexmark-ext-media-tags-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-macros\0.64.8\flexmark-ext-macros-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.64.8\flexmark-ext-ins-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.64.8\flexmark-ext-xwiki-macros-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.64.8\flexmark-ext-superscript-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.64.8\flexmark-ext-toc-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.64.8\flexmark-ext-typographic-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.64.8\flexmark-ext-wikilink-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.64.8\flexmark-ext-yaml-front-matter-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.64.8\flexmark-ext-youtube-embedded-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-html2md-converter\0.64.8\flexmark-html2md-converter-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.64.8\flexmark-jira-converter-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.64.8\flexmark-pdf-converter-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\1.0.10\openhtmltopdf-core-1.0.10.jar;C:\Users\Lenovo\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\1.0.10\openhtmltopdf-pdfbox-1.0.10.jar;C:\Users\Lenovo\.m2\repository\org\apache\pdfbox\xmpbox\2.0.24\xmpbox-2.0.24.jar;C:\Users\Lenovo\.m2\repository\de\rototor\pdfbox\graphics2d\0.32\graphics2d-0.32.jar;C:\Users\Lenovo\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\1.0.10\openhtmltopdf-rtl-support-1.0.10.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.64.8\flexmark-profile-pegdown-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-ast\0.64.8\flexmark-util-ast-0.64.8.jar;C:\Users\Lenovo\.m2\repository\org\jetbrains\annotations\24.0.1\annotations-24.0.1.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-builder\0.64.8\flexmark-util-builder-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-collection\0.64.8\flexmark-util-collection-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-data\0.64.8\flexmark-util-data-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-dependency\0.64.8\flexmark-util-dependency-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-format\0.64.8\flexmark-util-format-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-html\0.64.8\flexmark-util-html-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-misc\0.64.8\flexmark-util-misc-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-options\0.64.8\flexmark-util-options-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-sequence\0.64.8\flexmark-util-sequence-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util-visitor\0.64.8\flexmark-util-visitor-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.64.8\flexmark-youtrack-converter-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-resizable-image\0.64.8\flexmark-ext-resizable-image-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.64.8\flexmark-ext-tables-0.64.8.jar;C:\Users\Lenovo\.m2\repository\com\vladsch\flexmark\flexmark-util\0.64.8\flexmark-util-0.64.8.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-reports\4.2.34\serenity-reports-4.2.34.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-stats\4.2.34\serenity-stats-4.2.34.jar;C:\Users\Lenovo\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\2.1.21\kotlin-stdlib-2.1.21.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-reports-configuration\4.2.34\serenity-reports-configuration-4.2.34.jar;C:\Users\Lenovo\.m2\repository\com\ibm\icu\icu4j\72.1\icu4j-72.1.jar;C:\Users\Lenovo\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-report-resources\4.2.34\serenity-report-resources-4.2.34.jar;C:\Users\Lenovo\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\Lenovo\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.1\jackson-core-2.18.1.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.1\jackson-databind-2.18.1.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.1\jackson-annotations-2.18.1.jar;C:\Users\Lenovo\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;C:\Users\Lenovo\.m2\repository\commons-io\commons-io\2.17.0\commons-io-2.17.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Lenovo\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-java\4.33.0\selenium-java-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v135\4.33.0\selenium-devtools-v135-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v136\4.33.0\selenium-devtools-v136-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.33.0\selenium-devtools-v137-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.33.0\selenium-remote-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-api\1.50.0\opentelemetry-api-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-context\1.50.0\opentelemetry-context-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.50.0\opentelemetry-exporter-logging-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.50.0\opentelemetry-sdk-common-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.50.0\opentelemetry-sdk-extension-autoconfigure-spi-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.50.0\opentelemetry-sdk-extension-autoconfigure-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.50.0\opentelemetry-sdk-trace-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.50.0\opentelemetry-sdk-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.50.0\opentelemetry-sdk-metrics-1.50.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.50.0\opentelemetry-sdk-logs-1.50.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-os\4.33.0\selenium-os-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.33.0\selenium-safari-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-api\4.33.0\selenium-api-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-support\4.33.0\selenium-support-4.33.0.jar;C:\Users\Lenovo\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-json\4.33.0\selenium-json-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.33.0\selenium-chrome-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.33.0\selenium-chromium-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.33.0\selenium-manager-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.33.0\selenium-firefox-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-http\4.33.0\selenium-http-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.33.0\selenium-edge-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.33.0\selenium-ie-driver-4.33.0.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\htmlunit\4.7.0\htmlunit-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\httpmime\4.5.14\httpmime-4.5.14.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\htmlunit-core-js\4.7.0\htmlunit-core-js-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\neko-htmlunit\4.7.0\neko-htmlunit-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\htmlunit-cssparser\4.7.0\htmlunit-cssparser-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\htmlunit-xpath\4.7.0\htmlunit-xpath-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\htmlunit-csp\4.7.0\htmlunit-csp-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\htmlunit\htmlunit-websocket-client\4.7.0\htmlunit-websocket-client-4.7.0.jar;C:\Users\Lenovo\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\htmlunit3-driver\4.32.0\htmlunit3-driver-4.32.0.jar;C:\Users\Lenovo\.m2\repository\io\appium\java-client\9.4.0\java-client-9.4.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\groovy\groovy\4.0.23\groovy-4.0.23.jar;C:\Users\Lenovo\.m2\repository\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\Lenovo\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\Lenovo\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\Lenovo\.m2\repository\com\paulhammant\ngwebdriver\1.2\ngwebdriver-1.2.jar;C:\Users\Lenovo\.m2\repository\joda-time\joda-time\2.13.0\joda-time-2.13.0.jar;C:\Users\Lenovo\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Lenovo\.m2\repository\com\google\jimfs\jimfs\1.3.0\jimfs-1.3.0.jar;C:\Users\Lenovo\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\Lenovo\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Lenovo\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Lenovo\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\Lenovo\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Lenovo\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Lenovo\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\Lenovo\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-junit\4.2.34\serenity-junit-4.2.34.jar;C:\Users\Lenovo\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\Lenovo\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-cucumber\4.2.34\serenity-cucumber-4.2.34.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-core\7.22.2\cucumber-core-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-gherkin\7.22.2\cucumber-gherkin-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.22.2\cucumber-gherkin-messages-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\gherkin\32.1.1\gherkin-32.1.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\query\13.6.0\query-13.6.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\datatable\7.22.2\datatable-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-plugin\7.22.2\cucumber-plugin-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\docstring\7.22.2\docstring-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\html-formatter\21.10.1\html-formatter-21.10.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-java\7.22.2\cucumber-java-7.22.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-junit\7.22.2\cucumber-junit-7.22.2.jar;C:\Users\Lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-csv\1.12.0\commons-csv-1.12.0.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-screenplay\4.2.34\serenity-screenplay-4.2.34.jar;C:\Users\Lenovo\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\4.2.34\serenity-screenplay-webdriver-4.2.34.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-rest-assured\4.2.34\serenity-rest-assured-4.2.34.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\rest-assured\5.5.5\rest-assured-5.5.5.jar;C:\Users\Lenovo\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\json-path\5.5.5\json-path-5.5.5.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\rest-assured-common\5.5.5\rest-assured-common-5.5.5.jar;C:\Users\Lenovo\.m2\repository\io\rest-assured\xml-path\5.5.5\xml-path-5.5.5.jar;C:\Users\Lenovo\.m2\repository\org\apache\groovy\groovy-json\4.0.23\groovy-json-4.0.23.jar;C:\Users\Lenovo\.m2\repository\org\apache\groovy\groovy-xml\4.0.23\groovy-xml-4.0.23.jar;C:\Users\Lenovo\.m2\repository\net\serenity-bdd\serenity-screenplay-rest\4.2.34\serenity-screenplay-rest-4.2.34.jar;C:\Users\Lenovo\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\Lenovo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Lenovo"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-03-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-24"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Lenovo\Documents\DEV_SENIOR\PruebaSQA\prueba"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Lenovo\AppData\Local\Temp\surefire2389762183099679158\surefirebooter-20260622112502092_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24+36-3646"/>
+    <property name="user.name" value="Lenovo"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Lenovo\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Lenovo\AppData\Local\Temp\"/>
+    <property name="java.version" value="24"/>
+    <property name="user.dir" value="C:\Users\Lenovo\Documents\DEV_SENIOR\PruebaSQA\prueba"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-24\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;c:\Users\Lenovo\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\Google\Chrome\Application;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Lenovo\AppData\Local\Programs\Python\Launcher\;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;C:\Users\Lenovo\AppData\Local\GitHubDesktop\bin;c:\Users\Lenovo\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lenovo\AppData\Local\pnpm\bin;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;C:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Lenovo\AppData\Local\GitHubDesktop\bin;C:\php;C:\Users\Lenovo\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2\bin;C:\Users\Lenovo\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\JetBrains\PyCharm 2025.3.4\bin;C:\Users\Lenovo\AppData\Local\Programs\Antigravity\bin;C:\Users\Lenovo\AppData\Roaming\TinyTeX\bin\windows;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.1\bin;C:\Users\Lenovo\AppData\Local\Microsoft\WinGet\Packages\pnpm.pnpm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\Lenovo\.dotnet\tools;C:\Program Files\Maven\apache-maven-3.9.16\bin;C:\Users\Lenovo\AppData\Local\Programs\Ollama;C:\Users\Lenovo\.local\bin;c:\Users\Lenovo\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24+36-3646"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="Crear usuario exitosamente" classname="Autenticación de usuarios por API en Contact List App" time="3.599">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://thinking-tester-contact-list.herokuapp.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Pedro",
+    "lastName": "Lopez",
+    "password": "password123",
+    "email": "pedro1_1782145503647@test.com"
+}
+HTTP/1.1 201 Created
+Content-Length: 290
+Content-Type: application/json; charset=utf-8
+Date: Mon, 22 Jun 2026 16:25:06 GMT
+Etag: W/"122-5dPWxWOFa7HYO0AHa2sQKgF70+s"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=uQaNyk1GFIjLsBfzy7AymkmonwEdAwJbedM54pLNAC0%3D\u0026sid=af571f24-03ee-46d1-9f90-ab9030c2c74c\u0026ts=1782145506"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=uQaNyk1GFIjLsBfzy7AymkmonwEdAwJbedM54pLNAC0%3D&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&ts=1782145506"
+Server: Heroku
+Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTM5NjFlMjQ0MTM0OTAwMTVmZDIyMmQiLCJpYXQiOjE3ODIxNDU1MDZ9.X_-EIV29KKRB3MU7yULycGJqXeGgWdoH6BpGzIEHaMQ; Max-Age=684; Path=/; Expires=Mon, 22 Jun 2026 16:36:30 GMT
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+{
+    "user": {
+        "_id": "6a3961e24413490015fd222d",
+        "firstName": "Pedro",
+        "lastName": "Lopez",
+        "email": "pedro1_1782145503647@test.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTM5NjFlMjQ0MTM0OTAwMTVmZDIyMmQiLCJpYXQiOjE3ODIxNDU1MDZ9.X_-EIV29KKRB3MU7yULycGJqXeGgWdoH6BpGzIEHaMQ"
+}
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at https://serenity-bdd.info                                     
+ Documentation at https://serenity-bdd.github.io                                     
+ Test Automation Training and Coaching: https://www.serenity-dojo.com                
+ Commercial Support: https://www.serenity-dojo.com/serenity-bdd-enterprise-support   
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+-------------------------------------------------------------------------------------
+
+[main] INFO  - Test Suite Started: Autenticación de usuarios por API en Contact List App
+[main] INFO  - Test Suite Started: Autenticación de usuarios por API en Contact List App
+[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Crear usuario exitosamente(autenticación-de-usuarios-por-api-en-contact-list-app;crear-usuario-exitosamente)
+--------------------------------------------------------------------------------
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Crear usuario exitosamente
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Login exitoso" classname="Autenticación de usuarios por API en Contact List App" time="1.366">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://thinking-tester-contact-list.herokuapp.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Laura",
+    "lastName": "Gomez",
+    "password": "password123",
+    "email": "laura_api_ok1@test.com"
+}
+HTTP/1.1 201 Created
+Content-Length: 283
+Content-Type: application/json; charset=utf-8
+Date: Mon, 22 Jun 2026 16:25:07 GMT
+Etag: W/"11b-GhV1Js6iwAZGD7O83fa/Ys72DdM"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Dvaj3EINU7jjVc%2Blds7wWG9Nl9mHceIEFg%2FxAak7i10%3D\u0026sid=af571f24-03ee-46d1-9f90-ab9030c2c74c\u0026ts=1782145507"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=Dvaj3EINU7jjVc%2Blds7wWG9Nl9mHceIEFg%2FxAak7i10%3D&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&ts=1782145507"
+Server: Heroku
+Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTM5NjFlMzQ0MTM0OTAwMTVmZDIyMmYiLCJpYXQiOjE3ODIxNDU1MDd9.ZCp1W0Q8pQyufjoZF8xu4bjq-8I2Gpl9MD1a1pk6j2A; Max-Age=684; Path=/; Expires=Mon, 22 Jun 2026 16:36:31 GMT
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+{
+    "user": {
+        "_id": "6a3961e34413490015fd222f",
+        "firstName": "Laura",
+        "lastName": "Gomez",
+        "email": "laura_api_ok1@test.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTM5NjFlMzQ0MTM0OTAwMTVmZDIyMmYiLCJpYXQiOjE3ODIxNDU1MDd9.ZCp1W0Q8pQyufjoZF8xu4bjq-8I2Gpl9MD1a1pk6j2A"
+}
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Login exitoso(autenticación-de-usuarios-por-api-en-contact-list-app;login-exitoso)
+--------------------------------------------------------------------------------
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Login exitoso
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Obtener perfil del usuario autenticado" classname="Autenticación de usuarios por API en Contact List App" time="1.441">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://thinking-tester-contact-list.herokuapp.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Mario",
+    "lastName": "Ruiz",
+    "password": "password123",
+    "email": "mario_api_me1@test.com"
+}
+HTTP/1.1 201 Created
+Content-Length: 282
+Content-Type: application/json; charset=utf-8
+Date: Mon, 22 Jun 2026 16:25:08 GMT
+Etag: W/"11a-WSQ3B6nWRS16egZcyyFIG1i00As"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=hcg67rkJ4MfWrdfv2iyKTz3JTPuM45P0rHQbOXJEL88%3D\u0026sid=af571f24-03ee-46d1-9f90-ab9030c2c74c\u0026ts=1782145508"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=hcg67rkJ4MfWrdfv2iyKTz3JTPuM45P0rHQbOXJEL88%3D&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&ts=1782145508"
+Server: Heroku
+Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTM5NjFlNDQ0MTM0OTAwMTVmZDIyMzIiLCJpYXQiOjE3ODIxNDU1MDh9.4QqnJEgawNdx4piG8S-7-FWLJORGguY-ur9BE0-EIeU; Max-Age=684; Path=/; Expires=Mon, 22 Jun 2026 16:36:32 GMT
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+{
+    "user": {
+        "_id": "6a3961e44413490015fd2232",
+        "firstName": "Mario",
+        "lastName": "Ruiz",
+        "email": "mario_api_me1@test.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTM5NjFlNDQ0MTM0OTAwMTVmZDIyMzIiLCJpYXQiOjE3ODIxNDU1MDh9.4QqnJEgawNdx4piG8S-7-FWLJORGguY-ur9BE0-EIeU"
+}
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Obtener perfil del usuario autenticado(autenticación-de-usuarios-por-api-en-contact-list-app;obtener-perfil-del-usuario-autenticado)
+--------------------------------------------------------------------------------
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Obtener perfil del usuario autenticado
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Login fallido con contraseña incorrecta" classname="Autenticación de usuarios por API en Contact List App" time="0.969">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://thinking-tester-contact-list.herokuapp.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Sofia",
+    "lastName": "Diaz",
+    "password": "password123",
+    "email": "sofia_api_fail1@test.com"
+}
+HTTP/1.1 201 Created
+Content-Length: 284
+Content-Type: application/json; charset=utf-8
+Date: Mon, 22 Jun 2026 16:25:10 GMT
+Etag: W/"11c-Ts7EqWbV1iyvUh5nh1LPD04La6I"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=YQ0fRRMLRD7p2Md1Nw4%2FZQoaADQx8%2FCv5G9MFA4ky2U%3D\u0026sid=af571f24-03ee-46d1-9f90-ab9030c2c74c\u0026ts=1782145509"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=YQ0fRRMLRD7p2Md1Nw4%2FZQoaADQx8%2FCv5G9MFA4ky2U%3D&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&ts=1782145509"
+Server: Heroku
+Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTM5NjFlNTQ0MjdjZTAwMTUyODM4YzIiLCJpYXQiOjE3ODIxNDU1MDl9.YzGXp-sd7ltJj48dk_RiHfHD9zn97LcnLWggHYXkn4s; Max-Age=684; Path=/; Expires=Mon, 22 Jun 2026 16:36:34 GMT
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+{
+    "user": {
+        "_id": "6a3961e54427ce00152838c2",
+        "firstName": "Sofia",
+        "lastName": "Diaz",
+        "email": "sofia_api_fail1@test.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTM5NjFlNTQ0MjdjZTAwMTUyODM4YzIiLCJpYXQiOjE3ODIxNDU1MDl9.YzGXp-sd7ltJj48dk_RiHfHD9zn97LcnLWggHYXkn4s"
+}
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Login fallido con contraseña incorrecta(autenticación-de-usuarios-por-api-en-contact-list-app;login-fallido-con-contraseña-incorrecta)
+--------------------------------------------------------------------------------
+[main] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Login fallido con contraseña incorrecta
+----------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+</testsuite>

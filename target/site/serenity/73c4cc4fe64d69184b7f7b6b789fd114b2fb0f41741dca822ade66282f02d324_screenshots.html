@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-3.7.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/2.3.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/2.3.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/2.3.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0.min.js"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+
+    <!-- Swiper.js local styles and script -->
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
+    <script src="swiper/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const startIndex = parseInt(urlParams.get("screenshot")) || 0;
+
+            new Swiper('.swiper', {
+                initialSlide: startIndex,
+                effect: 'fade',
+                speed: 200,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + "</span>";
+                    },
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                keyboard: {
+                    enabled: true,
+                    onlyInViewport: true
+                }
+            });
+        });
+    </script>
+
+    <style>
+        .swiper {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            color: #000;
+            opacity: 1;
+            background: lightgrey;
+        }
+
+        .swiper-pagination-bullet-active {
+            color: #fff;
+            background: #007aff;
+        }
+    </style>
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Contact List Tests</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="087232a02abb72cfd01ffb8b8ce70563f1f1efa6de14df6b1ac8f40b806ac4a9.html">Autenticacion Ui</a></span>
+                > <span class="truncate-60"><a
+                    href="73c4cc4fe64d69184b7f7b6b789fd114b2fb0f41741dca822ade66282f02d324.html">Crear contacto v&aacute;lido </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="bi bi-chat-text"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 22-06-2026 11:25</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Gestión De Autenticación Y Contactos En Contact List App </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6c5512236937b92cd7a296b24edb966c2bd94be46b8910f8b129a42d6150eb25.html">1 To 10 Seconds
+                                        (Duration)
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Crear contacto v&aacute;lido
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+    <!-- Swiper Carousel -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="9795442c41c95e6fa497de1ecc076e52e8482a1dc48e53f4ec7356f258e68fd3.png" title=" Given que Ana abre la aplicaci&oacute;n de Contact List" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="9795442c41c95e6fa497de1ecc076e52e8482a1dc48e53f4ec7356f258e68fd3.png" title=" Ana open the application" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="9795442c41c95e6fa497de1ecc076e52e8482a1dc48e53f4ec7356f258e68fd3.png" title=" Ana opens the browser at https://thinking-tester-contact-list.herokuapp.com" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="9795442c41c95e6fa497de1ecc076e52e8482a1dc48e53f4ec7356f258e68fd3.png" title=" Ana open the application (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="9795442c41c95e6fa497de1ecc076e52e8482a1dc48e53f4ec7356f258e68fd3.png" title=" Given que Ana abre la aplicaci&oacute;n de Contact List (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="9795442c41c95e6fa497de1ecc076e52e8482a1dc48e53f4ec7356f258e68fd3.png" title=" Given que existe un usuario registrado con email &quot;ana_contacto4@test.com&quot; y contrase&ntilde;a &quot;password123&quot;" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="9795442c41c95e6fa497de1ecc076e52e8482a1dc48e53f4ec7356f258e68fd3.png" title=" Ana open the application" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="9795442c41c95e6fa497de1ecc076e52e8482a1dc48e53f4ec7356f258e68fd3.png" title=" Ana opens the browser at https://thinking-tester-contact-list.herokuapp.com" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="f29fa8c609bd341daea1a08fae752a71f5c11665e9be49f247b0afd6e0ec86ac.png" title=" Ana register new user" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="f29fa8c609bd341daea1a08fae752a71f5c11665e9be49f247b0afd6e0ec86ac.png" title=" Ana clicks on bot&oacute;n para ir al registro" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="f29fa8c609bd341daea1a08fae752a71f5c11665e9be49f247b0afd6e0ec86ac.png" title=" Ana enters 'Usuario' into campo first name en registro" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="d0ad43e0d8b120aad3c5d87d236accbedfa59e24ed649d65e49ea1f7137ea87b.png" title=" Ana enters 'Usuario' into campo first name en registro (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="d0ad43e0d8b120aad3c5d87d236accbedfa59e24ed649d65e49ea1f7137ea87b.png" title=" Ana enters 'Registrado' into campo last name en registro" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="bcb6820c4c85f9435ca10a6cbf018994913e94938d7609d2c17d385bd7185ceb.png" title=" Ana enters 'Registrado' into campo last name en registro (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="bcb6820c4c85f9435ca10a6cbf018994913e94938d7609d2c17d385bd7185ceb.png" title=" Ana enters 'ana_contacto4@test.com' into campo email en registro" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="5153fdd3ad788543854228cd6f33fa25ef03487a083de1d97932e4b2815d31f2.png" title=" Ana enters 'ana_contacto4@test.com' into campo email en registro (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="5153fdd3ad788543854228cd6f33fa25ef03487a083de1d97932e4b2815d31f2.png" title=" Ana enters 'password123' into campo password en registro" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="7a585a64f7214a598b86a82c09e0bbd7069d511f2acd7fc42fc295bda552745d.png" title=" Ana enters 'password123' into campo password en registro (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="7a585a64f7214a598b86a82c09e0bbd7069d511f2acd7fc42fc295bda552745d.png" title=" Ana clicks on bot&oacute;n submit de registro" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="8a60156071823e1d8846a4419b43d44248f5e57b0a619a232a3e84ad25663cf0.png" title=" Ana clicks on bot&oacute;n submit de registro (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="8a60156071823e1d8846a4419b43d44248f5e57b0a619a232a3e84ad25663cf0.png" title=" Ana register new user (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="8a60156071823e1d8846a4419b43d44248f5e57b0a619a232a3e84ad25663cf0.png" title=" Ana logout" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="b29797791023ca754d36f810bc7e641db4797fd6393101c004ffc842aac02fa4.png" title=" Ana clicks on bot&oacute;n Logout" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="e377d8a0174400372a0bf347b0c9601af5b96d62bb1ee762c93cbb4743f11b10.png" title=" Ana clicks on bot&oacute;n Logout (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="e377d8a0174400372a0bf347b0c9601af5b96d62bb1ee762c93cbb4743f11b10.png" title=" Ana logout (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="e377d8a0174400372a0bf347b0c9601af5b96d62bb1ee762c93cbb4743f11b10.png" title=" Given que existe un usuario registrado con email &quot;ana_contacto4@test.com&quot; y contrase&ntilde;a &quot;password123&quot; (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="9795442c41c95e6fa497de1ecc076e52e8482a1dc48e53f4ec7356f258e68fd3.png" title=" And inicia sesi&oacute;n con email &quot;ana_contacto4@test.com&quot; y contrase&ntilde;a &quot;password123&quot;" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="9795442c41c95e6fa497de1ecc076e52e8482a1dc48e53f4ec7356f258e68fd3.png" title=" Ana login with credentials" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="9795442c41c95e6fa497de1ecc076e52e8482a1dc48e53f4ec7356f258e68fd3.png" title=" Ana enters 'ana_contacto4@test.com' into campo de email en login" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="724c3fbee8c01fb0ecef9355d86ad6b3879a5039292e6dd58d4b4b8e4e3a9086.png" title=" Ana enters 'ana_contacto4@test.com' into campo de email en login (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="724c3fbee8c01fb0ecef9355d86ad6b3879a5039292e6dd58d4b4b8e4e3a9086.png" title=" Ana enters 'password123' into campo de contrase&ntilde;a en login" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="0cd84f40be12c02e9beaffe1086a1abff71afe357ea8a8c2bc84b57f2dadd2a6.png" title=" Ana enters 'password123' into campo de contrase&ntilde;a en login (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="0cd84f40be12c02e9beaffe1086a1abff71afe357ea8a8c2bc84b57f2dadd2a6.png" title=" Ana clicks on bot&oacute;n submit de login" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="604a74091ae4c7e34b7c76d7fd0c3bab5f32f73d6afe2d142ba7d2d9b2e9570c.png" title=" Ana clicks on bot&oacute;n submit de login (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="604a74091ae4c7e34b7c76d7fd0c3bab5f32f73d6afe2d142ba7d2d9b2e9570c.png" title=" Ana login with credentials (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="604a74091ae4c7e34b7c76d7fd0c3bab5f32f73d6afe2d142ba7d2d9b2e9570c.png" title=" And inicia sesi&oacute;n con email &quot;ana_contacto4@test.com&quot; y contrase&ntilde;a &quot;password123&quot; (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="b29797791023ca754d36f810bc7e641db4797fd6393101c004ffc842aac02fa4.png" title=" When crea un contacto con nombre &quot;Luis&quot; apellido &quot;Lopez&quot; fechaNacimiento &quot;1990-01-01&quot;" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="b29797791023ca754d36f810bc7e641db4797fd6393101c004ffc842aac02fa4.png" title=" Ana create new contact" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="b29797791023ca754d36f810bc7e641db4797fd6393101c004ffc842aac02fa4.png" title=" Ana clicks on bot&oacute;n Add a New Contact" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="9860eca06b52661fbc1f2134688540d330c3ab7912a31fd38f4f3d2af7535d7f.png" title=" Ana clicks on bot&oacute;n Add a New Contact (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="9860eca06b52661fbc1f2134688540d330c3ab7912a31fd38f4f3d2af7535d7f.png" title=" Ana enters 'Luis' into campo first name del contacto" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="220bfd6053513ebbf41cdc7b1bab182b204f167fa5d5b0c8d294a4e8f0443b4e.png" title=" Ana enters 'Luis' into campo first name del contacto (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="220bfd6053513ebbf41cdc7b1bab182b204f167fa5d5b0c8d294a4e8f0443b4e.png" title=" Ana enters 'Lopez' into campo last name del contacto" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="286f8332e6c9bfdd96a45223ee6069e835c9e77168664f9c1e7c32dbfe79fdae.png" title=" Ana enters 'Lopez' into campo last name del contacto (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="286f8332e6c9bfdd96a45223ee6069e835c9e77168664f9c1e7c32dbfe79fdae.png" title=" Ana enters '1990-01-01' into campo birthdate del contacto" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="7e166bab455c4fbf4adb3d06a4639704271b2cfe6db0e3933c3310f78b513c8a.png" title=" Ana enters '1990-01-01' into campo birthdate del contacto (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="7e166bab455c4fbf4adb3d06a4639704271b2cfe6db0e3933c3310f78b513c8a.png" title=" Ana clicks on bot&oacute;n submit del contacto" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="14d70776e4054d9d8b658383663e8afcde4820a5e036ddf70e4a7b57d8add1b0.png" title=" Ana clicks on bot&oacute;n submit del contacto (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="14d70776e4054d9d8b658383663e8afcde4820a5e036ddf70e4a7b57d8add1b0.png" title=" Ana create new contact (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="14d70776e4054d9d8b658383663e8afcde4820a5e036ddf70e4a7b57d8add1b0.png" title=" When crea un contacto con nombre &quot;Luis&quot; apellido &quot;Lopez&quot; fechaNacimiento &quot;1990-01-01&quot; (completed)" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="4c0b437cb7b2bb4a41c5e51eda4de7ece85f1a525c53ef007ce4368bc93a3831.png" title=" Then deber&iacute;a ver el contacto &quot;Luis Lopez&quot; en la lista" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="4c0b437cb7b2bb4a41c5e51eda4de7ece85f1a525c53ef007ce4368bc93a3831.png" title=" Then contacto en la lista: Luis Lopez should be an element that is visible" width="0" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="4c0b437cb7b2bb4a41c5e51eda4de7ece85f1a525c53ef007ce4368bc93a3831.png" title=" Then debería ver el contacto "Luis Lopez" en la lista (completed): <span class='success-color'>SUCCESS</span>" width="0" />
+                </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 4.2.34</span>
+</div>
+</body>
+</html>
