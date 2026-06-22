@@ -1,5 +1,6 @@
 package com.pruebas.ui.stepdefinitions;
 
+import com.pruebas.ui.tasks.CreateNewContact;
 import com.pruebas.ui.tasks.LoginWithCredentials;
 import com.pruebas.ui.tasks.Logout;
 import com.pruebas.ui.tasks.OpenTheApplication;
@@ -12,11 +13,11 @@ import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import io.cucumber.java.es.Y;
 import net.serenitybdd.core.Serenity;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
-import net.serenitybdd.screenplay.questions.WebElementQuestion;
 import net.serenitybdd.screenplay.questions.Text;
+import net.serenitybdd.screenplay.questions.WebElementQuestion;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
@@ -88,6 +89,34 @@ public class AutenticacionUISteps {
     public void no_deberia_ver_la_lista_de_contactos() {
         OnStage.theActorInTheSpotlight().should(
                 seeThat(WebElementQuestion.the(ContactListPage.BUTTON_ADD_NEW_CONTACT), not(isVisible()))
+        );
+    }
+
+    @Cuando("cierra sesión")
+    public void cierra_sesion() {
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                Logout.fromApplication()
+        );
+    }
+
+    @Entonces("debería ver el formulario de login")
+    public void deberia_ver_el_formulario_de_login() {
+        OnStage.theActorInTheSpotlight().should(
+                seeThat(WebElementQuestion.the(LoginPage.INPUT_EMAIL), isVisible())
+        );
+    }
+
+    @Cuando("crea un contacto con nombre {string} apellido {string} fechaNacimiento {string}")
+    public void crea_un_contacto_con_nombre_apellido_fecha_nacimiento(String nombre, String apellido, String fechaNacimiento) {
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                CreateNewContact.withData(nombre, apellido, fechaNacimiento)
+        );
+    }
+
+    @Entonces("debería ver el contacto {string} en la lista")
+    public void deberia_ver_el_contacto_en_la_lista(String nombreCompleto) {
+        OnStage.theActorInTheSpotlight().should(
+                seeThat(WebElementQuestion.the(ContactListPage.CONTACT_NAME(nombreCompleto)), isVisible())
         );
     }
 }
