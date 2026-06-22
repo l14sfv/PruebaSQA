@@ -1,15 +1,15 @@
 # Prueba SQA - Automatización UI y API con Serenity BDD
 
-Proyecto de automatización funcional para la aplicación **Contact List App**, implementado con **Java**, **Maven**, **Serenity BDD**, **Cucumber**, **Screenplay**, **Selenium WebDriver** y **Rest Assured**. Serenity soporta pruebas web con Screenplay y también pruebas REST, mientras que Cucumber permite expresar los escenarios en Gherkin y ejecutarlos como pruebas automatizadas.[1][2][3]
+Proyecto de automatización funcional para la aplicación **Contact List App**, implementado con **Java**, **Maven**, **Serenity BDD**, **Cucumber**, **Screenplay**, **Selenium WebDriver** y **Rest Assured**. Serenity soporta pruebas web con Screenplay y también pruebas REST, mientras que Cucumber permite expresar los escenarios en Gherkin y ejecutarlos como pruebas automatizadas.
 
 ## Alcance
 
 La suite cubre dos capas principales:
 
-- **UI**: autenticación, cierre de sesión y creación de contactos con Selenium + Screenplay.[2][4]
-- **API**: creación de usuario, login y consulta de perfil con Serenity REST / Rest Assured.[1][3][5]
+- **UI**: autenticación, cierre de sesión y creación de contactos con Selenium + Screenplay.
+- **API**: creación de usuario, login y consulta de perfil con Serenity REST / Rest Assured.
 
-Además, el proyecto usa generación dinámica de correos para evitar colisiones de datos entre ejecuciones, una práctica común en automatización cuando los escenarios crean usuarios nuevos.[6][7]
+Además, el proyecto usa generación dinámica de correos para evitar colisiones de datos entre ejecuciones, una práctica común en automatización cuando los escenarios crean usuarios nuevos.
 
 ## Stack tecnológico
 
@@ -17,11 +17,11 @@ Además, el proyecto usa generación dinámica de correos para evitar colisiones
 |---|---|
 | Java | Lenguaje principal de automatización. |
 | Maven | Gestión de dependencias y ejecución de pruebas. |
-| Serenity BDD | Orquestación, reportes y soporte Screenplay/REST.[1] |
-| Cucumber | Definición de escenarios en Gherkin.[8][9] |
-| Screenplay | Patrón de diseño para tareas, interacciones y manejo de estado entre pasos.[4][10] |
-| Selenium WebDriver | Automatización de interfaz web.[2] |
-| Rest Assured | Validación y consumo de endpoints REST en pruebas API.[3] |
+| Serenity BDD | Orquestación, reportes y soporte Screenplay/REST. |
+| Cucumber | Definición de escenarios en Gherkin.|
+| Screenplay | Patrón de diseño para tareas, interacciones y manejo de estado entre pasos. |
+| Selenium WebDriver | Automatización de interfaz web. |
+| Rest Assured | Validación y consumo de endpoints REST en pruebas API. |
 
 ## Estructura sugerida
 
@@ -48,7 +48,7 @@ src
 │           └── ui
 ```
 
-La organización por capas y por responsabilidades es consistente con el enfoque Screenplay, donde los actores ejecutan tareas y comparten datos recordándolos y recuperándolos entre pasos.[4][10]
+La organización por capas y por responsabilidades es consistente con el enfoque Screenplay, donde los actores ejecutan tareas y comparten datos recordándolos y recuperándolos entre pasos.
 
 ## Requisitos previos
 
@@ -68,7 +68,7 @@ Antes de ejecutar el proyecto, conviene tener instalado:
 
 ## Datos dinámicos
 
-El proyecto genera correos únicos para UI y API mediante una clase utilitaria como `EmailGenerator`, evitando que un mismo correo cause errores de negocio al repetir escenarios que registran usuarios.[6][7]
+El proyecto genera correos únicos para UI y API mediante una clase utilitaria como `EmailGenerator`, evitando que un mismo correo cause errores de negocio al repetir escenarios que registran usuarios.
 
 Ejemplo:
 
@@ -86,7 +86,7 @@ public final class EmailGenerator {
 }
 ```
 
-En Screenplay, el valor generado se puede guardar con `remember()` y recuperar con `recall()`, lo que permite reutilizar el mismo email dentro del escenario tanto en UI como en API.[11][10][4]
+En Screenplay, el valor generado se puede guardar con `remember()` y recuperar con `recall()`, lo que permite reutilizar el mismo email dentro del escenario tanto en UI como en API.
 
 ## Ejecución de pruebas
 
@@ -96,7 +96,7 @@ En Screenplay, el valor generado se puede guardar con `remember()` y recuperar c
 mvn clean verify
 ```
 
-Maven ejecuta la suite y Serenity genera el reporte HTML consolidado al finalizar la corrida.[1]
+Maven ejecuta la suite y Serenity genera el reporte HTML consolidado al finalizar la corrida.
 
 ### Ejecutar solo UI
 
@@ -118,7 +118,7 @@ Después de la ejecución, el reporte principal queda disponible en:
 target/site/serenity/index.html
 ```
 
-Serenity genera reportes detallados de resultados, pasos ejecutados y estado final de la suite.[1]
+Serenity genera reportes detallados de resultados, pasos ejecutados y estado final de la suite.
 
 ## Escenarios cubiertos
 
@@ -138,19 +138,19 @@ Serenity genera reportes detallados de resultados, pasos ejecutados y estado fin
 
 ## Buenas prácticas implementadas
 
-- Uso de Screenplay para mejorar mantenibilidad y legibilidad de la automatización.[4]
-- Separación entre UI y API por paquetes y runners independientes.[1][5]
-- Datos de prueba dinámicos para evitar usuarios repetidos.[6][7]
-- Reutilización del estado del actor con `remember()` y `recall()`.[11][10]
-- Reportería ejecutiva y técnica con Serenity.[1]
+- Uso de Screenplay para mejorar mantenibilidad y legibilidad de la automatización.
+- Separación entre UI y API por paquetes y runners independientes.
+- Datos de prueba dinámicos para evitar usuarios repetidos.
+- Reutilización del estado del actor con `remember()` y `recall()`.
+- Reportería ejecutiva y técnica con Serenity.
 
 ## Posibles mejoras
 
 - Agregar CRUD completo de contactos por API.
 - Integrar ejecución en pipeline CI/CD.
-- Incorporar tags de Cucumber para suites por smoke, regression o api.[9][12]
-- Exportar colección complementaria en Postman para documentación y validación manual rápida.[13][14]
+- Incorporar tags de Cucumber para suites por smoke, regression o api.
+- Exportar colección complementaria en Postman para documentación y validación manual rápida.
 
 ## Autor
 
-Proyecto desarrollado como prueba técnica de automatización QA, cubriendo validaciones de UI y API sobre Contact List App con un enfoque mantenible basado en Serenity Screenplay.[1][4]
+Proyecto desarrollado como prueba técnica de automatización QA, cubriendo validaciones de UI y API sobre Contact List App con un enfoque mantenible basado en Serenity Screenplay.
