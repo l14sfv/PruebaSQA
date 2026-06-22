@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: com.pruebas.runners.AutenticacionUIRunner
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 36.03 s <<< FAILURE! -- in com.pruebas.runners.AutenticacionUIRunner
+Gestión de autenticación y contactos en Contact List App.Logout exitoso -- Time elapsed: 7.891 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'cierra sesión' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("cierra sesión")
+public void cierraSesión() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("debería ver el formulario de login")
+public void deberíaVerElFormularioDeLogin() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Gestión de autenticación y contactos en Contact List App.Crear contacto válido -- Time elapsed: 7.900 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'crea un contacto con nombre "Luis" apellido "Lopez" fechaNacimiento "1990-01-01"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("crea un contacto con nombre {string} apellido {string} fechaNacimiento {string}")
+public void creaUnContactoConNombreApellidoFechaNacimiento(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("debería ver el contacto {string} en la lista")
+public void deberíaVerElContactoEnLaLista(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
