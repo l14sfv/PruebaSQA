@@ -7,12 +7,14 @@ import com.pruebas.ui.tasks.OpenTheApplication;
 import com.pruebas.ui.tasks.RegisterNewUser;
 import com.pruebas.ui.userinterfaces.ContactListPage;
 import com.pruebas.ui.userinterfaces.LoginPage;
+import com.pruebas.utils.EmailGenerator;
 import io.cucumber.java.Before;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import io.cucumber.java.es.Y;
 import net.serenitybdd.core.Serenity;
+import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
@@ -40,9 +42,14 @@ public class AutenticacionUISteps {
         );
     }
 
-    @Cuando("se registra con nombre {string} apellido {string} email {string} y contraseña {string}")
-    public void se_registra_con_datos(String firstName, String lastName, String email, String password) {
-        OnStage.theActorInTheSpotlight().attemptsTo(
+    @Cuando("se registra con nombre {string} apellido {string} y contraseña {string}")
+    public void se_registra_con_datos(String firstName, String lastName, String password) {
+        Actor actor = OnStage.theActorInTheSpotlight();
+        String email = EmailGenerator.unique("uiuser");
+
+        actor.remember("generatedEmail", email);
+
+        actor.attemptsTo(
                 RegisterNewUser.withData(firstName, lastName, email, password)
         );
     }
@@ -54,18 +61,26 @@ public class AutenticacionUISteps {
         );
     }
 
-    @Dado("que existe un usuario registrado con email {string} y contraseña {string}")
-    public void que_existe_un_usuario_registrado(String email, String password) {
-        OnStage.theActorInTheSpotlight().attemptsTo(
+    @Dado("que existe un usuario registrado con contraseña {string}")
+    public void que_existe_un_usuario_registrado(String password) {
+        Actor actor = OnStage.theActorInTheSpotlight();
+        String email = EmailGenerator.unique("uiuser");
+
+        actor.remember("generatedEmail", email);
+
+        actor.attemptsTo(
                 OpenTheApplication.onLoginPage(),
                 RegisterNewUser.withData("Usuario", "Registrado", email, password),
                 Logout.fromApplication()
         );
     }
 
-    @Cuando("inicia sesión con email {string} y contraseña {string}")
-    public void inicia_sesion_con_email_y_contrasena(String email, String password) {
-        OnStage.theActorInTheSpotlight().attemptsTo(
+    @Cuando("inicia sesión con la contraseña {string}")
+    public void inicia_sesion_con_la_contrasena(String password) {
+        Actor actor = OnStage.theActorInTheSpotlight();
+        String email = actor.recall("generatedEmail");
+
+        actor.attemptsTo(
                 LoginWithCredentials.using(email, password)
         );
     }
