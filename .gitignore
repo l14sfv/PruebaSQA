@@ -1,0 +1,43 @@
+# Maven
+/target/
+
+# Serenity reports
+.serenity/
+output/
+
+# IDEs
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Java
+*.class
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment and secrets
+.env
+.env.*
+
+# Test artifacts
+screenshots/
+reports/
+
+# Selenium / webdriver caches
+webdriver/
+
+# Mac and Windows metadata
+Desktop.ini
