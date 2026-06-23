@@ -17,8 +17,13 @@ Además, el proyecto usa generación dinámica de correos para evitar colisiones
 |---|---|
 | Java | Lenguaje principal de automatización. |
 | Maven | Gestión de dependencias y ejecución de pruebas. |
+<<<<<<< HEAD
 | Serenity BDD | Orquestación, reportes y soporte Screenplay/REST.|
 | Cucumber | Definición de escenarios en Gherkin. |
+=======
+| Serenity BDD | Orquestación, reportes y soporte Screenplay/REST. |
+| Cucumber | Definición de escenarios en Gherkin.|
+>>>>>>> 783c26a5f00124500ee5885c22f77c2c7f377002
 | Screenplay | Patrón de diseño para tareas, interacciones y manejo de estado entre pasos. |
 | Selenium WebDriver | Automatización de interfaz web. |
 | Rest Assured | Validación y consumo de endpoints REST en pruebas API. |
@@ -69,6 +74,10 @@ Antes de ejecutar el proyecto, conviene tener instalado:
 ## Datos dinámicos
 
 El proyecto genera correos únicos para UI y API mediante una clase utilitaria como `EmailGenerator`, evitando que un mismo correo cause errores de negocio al repetir escenarios que registran usuarios.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 783c26a5f00124500ee5885c22f77c2c7f377002
 Ejemplo:
 
 ```java
@@ -95,7 +104,7 @@ En Screenplay, el valor generado se puede guardar con `remember()` y recuperar c
 mvn clean verify
 ```
 
-Maven ejecuta la suite y Serenity genera el reporte HTML consolidado al finalizar la corrida.[1]
+Maven ejecuta la suite y Serenity genera el reporte HTML consolidado al finalizar la corrida.
 
 ### Ejecutar solo UI
 
@@ -139,7 +148,11 @@ Serenity genera reportes detallados de resultados, pasos ejecutados y estado fin
 
 - Uso de Screenplay para mejorar mantenibilidad y legibilidad de la automatización.
 - Separación entre UI y API por paquetes y runners independientes.
+<<<<<<< HEAD
 - Datos de prueba dinámicos para evitar usuarios repetidos.[6][7]
+=======
+- Datos de prueba dinámicos para evitar usuarios repetidos.
+>>>>>>> 783c26a5f00124500ee5885c22f77c2c7f377002
 - Reutilización del estado del actor con `remember()` y `recall()`.
 - Reportería ejecutiva y técnica con Serenity.
 
@@ -152,4 +165,8 @@ Serenity genera reportes detallados de resultados, pasos ejecutados y estado fin
 
 ## Autor
 
+<<<<<<< HEAD
 Proyecto desarrollado como prueba técnica de automatización QA, cubriendo validaciones de UI y API sobre Contact List App con un enfoque mantenible basado en Serenity Screenplay.
+=======
+Proyecto desarrollado como prueba técnica de automatización QA, cubriendo validaciones de UI y API sobre Contact List App con un enfoque mantenible basado en Serenity Screenplay.
+>>>>>>> 783c26a5f00124500ee5885c22f77c2c7f377002
